@@ -1,1 +1,2 @@
 # SampleCode
+Writing sample code
