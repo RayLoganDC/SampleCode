@@ -1,0 +1,28 @@
+<html>  
+<head>      
+
+<script language='javascript'>
+function ValidateEmail(inputText)  
+{  
+debugger;
+alert('test');
+inputText="Vinaykarumuri15@gmail.com";	
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(inputText.match(mailformat))  
+{  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+
+return false;  
+}  
+}
+</script>
+</head>
+<body onload="ValidateEmail();">
+testing
+</body>
+</html>

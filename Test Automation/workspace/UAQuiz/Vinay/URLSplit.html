@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language = 'javascript'>
+function Elements(){
+alert("Hai");
+debugger;
+var url = new String("https://www.google.com/test");
+
+var protocol = new String(url.substring(0,url.indexOf(":")-1));
+var baseurl = url.substring(url.indexOf("//")-1,url.lastIndexOf("/")-1);
+var lasturl = url.substring(url.lastIndexOf("/"), url.length);
+alert(url);
+alert ( "protocol is " + protocol);
+alert ( "base URL is " + baseurl );
+alert (" lasturl  is " + lasturl );
+}
+</script>
+</head>
+<body onload="Elements();">
+<H1>URL Validation</H1>
+
+</body>
+</html>

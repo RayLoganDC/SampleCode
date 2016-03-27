@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language = 'javascript'>
+
+function findDuplicates(n, A){
+debugger;
+var i,j,n;
+n=5;
+var A= new Array(0,1,1,2,3);
+
+for(i=0;i<n;i++){
+ for(j=i+1; j<n ; j++){
+ if(A[i]==A[j])
+	alert("Duplicate element is  " + A[j]);
+}
+}
+
+}
+
+</script>
+</head>
+
+<body onload="findDuplicates();">
+<H1>testing</H1>
+</body>
+</html>

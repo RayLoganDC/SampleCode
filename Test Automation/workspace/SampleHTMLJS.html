@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Test Script</h1>
+
+<script type="text/javascript">
+function array_reverse() {
+	//var buf = process.argv[2]
+	var buf = "1,3,4,5";
+	var sBufLen = buf.toString().split(",").length;
+	var sBuffArray = buf.toString().split(",");
+	console.log (buf);
+	console.log (sBufLen);
+	console.log (sBuffArray);
+	alert ("Array length: " + sBufLen + ";  " + "Array " + sBuffArray);
+	console.log (sBuffArray.reverse());	
+	alert("Reverse array " + sBuffArray);
+}
+</script>
+
+<body onload="array_reverse()">
+</body>
+
+</html>

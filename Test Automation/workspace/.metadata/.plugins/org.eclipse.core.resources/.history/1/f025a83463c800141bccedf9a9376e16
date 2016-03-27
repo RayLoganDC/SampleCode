@@ -1,0 +1,13 @@
+/**
+ * New node file
+ */
+// console.log (process.argv.reverse());
+
+//var buf = process.argv[2];
+var buf = "abcde";
+var sBuffer = buf.toString().split("").length;
+var sBuffArray = buf.toString().split("");
+console.log (buf);
+console.log (sBuffer);
+console.log (sBuffArray);
+console.log (sBuffArray.reverse());
