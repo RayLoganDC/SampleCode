@@ -13,20 +13,20 @@ namespace ConsoleApplication
             
             Console.WriteLine("Hello World");
             var intExample = IntExample();
-            Console.WriteLine(intExample);
-            var v = Console.Read();
-            Console.WriteLine(v);
+            Console.WriteLine("Result in Main: " + intExample);
+            //var v = Console.Read();
+            //Console.WriteLine(v);
             
         }
         
         public static int IntExample()
         {
-            int a = 1;
+            int a = 3;
             int b = 2;
             int c;
             
             c = a * b;
-            Console.WriteLine(c); 
+            Console.WriteLine("Result within function: " + c); 
             return c;
         }
         
