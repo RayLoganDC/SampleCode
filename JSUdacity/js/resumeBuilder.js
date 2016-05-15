@@ -1,4 +1,4 @@
-/*
+
 var testString = 'Test';
 console.log (testString);
 
@@ -17,6 +17,7 @@ var formattedName = HTMLheaderName.replace("%data%", name);
 var formattedRole = HTMLheaderRole.replace("%data%", role);
 var formattedEmail = HTMLemail.replace("%data%", email);
 
+/*
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 //$("#header").append(formattedEmail);
@@ -27,15 +28,17 @@ $("#header").prepend(formattedName);
 var skills = ["Technology", "Management", "Product"];
 var bio = {
     "name": "Ray",
-    "role": role,
+    "role": "Technology",
     "contacts":{
       "mobile": "202-202-2000",
-      "email": email  
+      "email": "rayLoganDC@dauntless.mind"  
     },
     "welcomeMsg": "Hello! Welcome",
-    "skills": skills,
+    "skills": ["Technology", "Management", "Product"],
     "bioPic": "images/fry.jpg"
 };
+
+
 //$("#main").append(bio.name);
 
 //bio.city = "WashDC";
@@ -59,3 +62,13 @@ var projects = {
 };
 
 
+if (bio.skills.length > 0){
+    $("#header").append(HTMLskillsStart);
+    
+    var formattedSkill = HtmlSkills.replace("%data%", bio.skills[0]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HtmlSkills.replace("%data%", bio.skills[1]);
+    $("#skills").append(formattedSkill);
+    formattedSkill = HtmlSkills.replace("%data%", bio.skills[2]);
+    $("#skills").append(formattedSkill);
+} 
