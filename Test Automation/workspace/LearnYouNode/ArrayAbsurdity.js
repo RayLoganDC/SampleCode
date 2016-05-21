@@ -11,6 +11,7 @@ var newAr = ar[1].split(',');
 //console.log(newAr);
 newAr.sort();
 //console.log(newAr);
+console.log(newAr.length);
 for(var i=0; i<newAr.length; i++) {
 	if(newAr[i] == newAr[i+1]) {
         console.log(newAr[i]);
@@ -29,6 +30,7 @@ function array_absurdity() {
 	//alert(newAr);
 	newAr.sort();
 	//alert(newAr);
+    alert(newAr.length);
 	for(var i=0; i<newAr.length; i++) {
 		if(newAr[i] == newAr[i+1]) {
 	        alert(newAr[i]);
