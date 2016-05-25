@@ -15,7 +15,7 @@ var weirdObject = {
 // notation to access the property, otherwise mark false.
 
 // For example, uncomment the line below to see if you can use dot notation to access `property1`.
-//console.log(weirdObject.8property);
+console.log(weirdObject.property);
 console.log(weirdObject["8property"]);
 
 // I'll give you the first answer. The rest are set to false. Try out each property and
