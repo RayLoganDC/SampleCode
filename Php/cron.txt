@@ -1,0 +1,1 @@
+*/1 * * * * php -f -o ./temp.txt /Users/ksankuru/Documents/Code/Php/testfile.php 
